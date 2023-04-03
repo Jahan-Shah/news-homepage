@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/styles/modern-normalize.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/mobile-nav.css" />
+    <link rel="stylesheet" href="/styles/utils.css" />
+    <script defer src="/src/main.js"></script>
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <img class="logo" src="/assets/images/logo.svg" alt="" />
+        <ul class="header__menu">
+          <li>
+            <a class="header__links" href="#">Home</a>
+          </li>
+          <li>
+            <a class="header__links" href="#">New</a>
+          </li>
+          <li>
+            <a class="header__links" href="#">Popular</a>
+          </li>
+          <li>
+            <a class="header__links" href="#">Trending</a>
+          </li>
+          <li>
+            <a class="header__links" href="#">Categories</a>
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg
+            class="bars"
+            width="40"
+            height="17"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g fill="#00001A" fill-rule="evenodd">
+              <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+              <path d="M0 0h40v3H0z" />
+            </g>
+          </svg>
+          <svg
+            class="cross"
+            width="32"
+            height="31"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g fill="#00001A" fill-rule="evenodd">
+              <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
+              <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
+            </g>
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- mobile nav start -->
+
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile__menu">
+          <li>
+            <a class="mobile__links" href="#">Home</a>
+          </li>
+          <li>
+            <a class="mobile__links" href="#">New</a>
+          </li>
+          <li>
+            <a class="mobile__links" href="#">Popular</a>
+          </li>
+          <li>
+            <a class="mobile__links" href="#">Trending</a>
+          </li>
+          <li>
+            <a class="mobile__links" href="#">Categories</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- mobile nav end -->
+    <main class="main">
+      <section class="section container">
+        <div class="hero">
+          <picture class="main__img">
+            <source
+              srcset="/assets/images/image-web-3-desktop.jpg"
+              media="(min-width: 768px)"
+            />
+            <img src="/assets/images/image-web-3-mobile.jpg" alt="" />
+          </picture>
+          <div class="hero__text">
+            <h1 class="hero__title">The Bright Future of Web 3.0?</h1>
+            <div class="hero__readmore">
+              <p class="hero__paragraph">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <a href="#" class="hero__button">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero__new">
+          <h2 class="new__title">New</h2>
+          <div class="new__links">
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="new__links">
+            <h3>The Downsides of AI Artistry</h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="new__links">
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="article container">
+        <div class="card">
+          <img src="/assets/images/image-retro-pcs.jpg" alt="retro pcs" />
+          <div class="card__text">
+            <h2>01</h2>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/assets/images/image-top-laptops.jpg" alt="retro pcs" />
+          <div class="card__text">
+            <h2>02</h2>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/assets/images/image-gaming-growth.jpg" alt="retro pcs" />
+          <div class="card__text">
+            <h2>03</h2>
+            <h3>The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
