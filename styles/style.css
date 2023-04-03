@@ -263,10 +263,6 @@ p {
     .card {
         width: 350px;
     }
-
-    .card:not(:last-child) {
-        margin-bottom: unset;
-    }
 }
 
 @media (min-width: 1440px) {
